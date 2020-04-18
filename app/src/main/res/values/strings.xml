@@ -1,3 +1,61 @@
 <resources>
     <string name="app_name">Buy Fresh</string>
+    <string name="bill_breakdown">Bill Breakdown</string>
+    <string name="qst">QST</string>
+    <string name="gst">GST</string>
+    <string name="price">price</string>
+    <string name="total">Total</string>
+    <string name="proceed_to_payment">Proceed to PayMent</string>
+    <string name="todo">TODO</string>
+    <string name="bananas">Bananas</string>
+    <string name="_0">0</string>
+    <string name="product_description">Product Description:</string>
+    <string name="origin_canada_united_states">Origin : Canada, United States</string>
+    <string name="enter_quantity">Enter Quantity:</string>
+    <string name="origin_colombia_costa_rica_ecuador_guatemala_honduras_mexico">Origin : Colombia, Costa Rica, Ecuador, Guatemala, Honduras, Mexico</string>
+    <string name="_0_20_ea">$0.20 ea.</string>
+    <string name="banana">Banana</string>
+    <string name="mushrooms">Mushrooms</string>
+    <string name="_0_99_ea">$0.99 ea.</string>
+    <string name="raspberries">Raspberries</string>
+    <string name="_7_2_pieces">$7 / 2 pieces</string>
+    <string name="proceed_to_checkout">Proceed to Checkout.</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="log_in">Log in</string>
+    <string name="don_t_have_an_account_create_new_account">Don\'t have an account? create new account!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="logo">Logo</string>
+    <string name="welcomee">Welcome to Buy Fresh, your own grocery store. We deliver all your groceries, including beer and wine, directly to your home or office. It’s quick, convenient, and the best.</string>
+    <string name="join_now">Join Now!</string>
+    <string name="already_have_an_account_log_in">Already have an Account? Log in</string>
+    <string name="shop_by_category">Shop by Category</string>
+    <string name="fruit">Fruit</string>
+    <string name="dairy">Dairy</string>
+    <string name="beverage">Beverage</string>
+    <string name="snacks">snacks</string>
+    <string name="frozen">frozen</string>
+    <string name="bread">bread</string>
+    <string name="beer">beer</string>
+    <string name="health">Health</string>
+    <string name="pharmacy">pharmacy</string>
+    <string name="enter_your_details">Enter your details:</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_email_address">Enter your Email Address</string>
+    <string name="i_agree_to_terms_and_conditions">I agree to Terms and Conditions</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_your_phone_number">Enter your Phone Number</string>
+    <string name="enter_your_password">Enter Your password</string>
+    <string name="enter_your_password_again">Enter your password again</string>
+
+    <string-array name="numbers">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>

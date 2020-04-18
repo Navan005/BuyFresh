@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity">
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/shop_by_category"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp">
+
+        <ImageView
+            android:id="@+id/fruits_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="3dp"
+            android:src="@drawable/fruit"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/fruit" />
+
+        <ImageView
+            android:id="@+id/dairy_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/dairy"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/dairy" />
+
+        <ImageView
+            android:id="@+id/beverage_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/beverage"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/beverage" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/snacks_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/snacks"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/snacks" />
+
+        <ImageView
+            android:id="@+id/frozen_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/frozen"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/frozen" />
+
+        <ImageView
+            android:id="@+id/bread_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/bread"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/bread" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/beer_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/beer"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/beer" />
+
+        <ImageView
+            android:id="@+id/health_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/health"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/health" />
+
+        <ImageView
+            android:id="@+id/pharmacy_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/pharmacy"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/pharmacy" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

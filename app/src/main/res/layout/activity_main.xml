@@ -14,7 +14,8 @@
         android:layout_height="168dp"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/logo" />
 
 
     <TextView
@@ -29,10 +30,7 @@
         android:background="@android:color/background_dark"
         android:fontFamily="@font/allerta_stencil"
         android:shadowColor="#3DB61B"
-        android:text="Welcome to Buy Fresh, your own grocery store.
-We deliver all your groceries, including beer and wine,
-directly to your home or office. It’s quick,
-convenient, and the best."
+        android:text="@string/welcomee"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
 
@@ -47,7 +45,7 @@ convenient, and the best."
         android:background="@drawable/input_design"
         android:fontFamily="@font/allerta_stencil"
         android:padding="20dp"
-        android:text="Join Now!"
+        android:text="@string/join_now"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"/>
@@ -64,7 +62,7 @@ convenient, and the best."
         android:background="@drawable/buttons"
         android:fontFamily="@font/allerta_stencil"
         android:padding="20dp"
-        android:text="Already have an Account? Log in"
+        android:text="@string/already_have_an_account_log_in"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
