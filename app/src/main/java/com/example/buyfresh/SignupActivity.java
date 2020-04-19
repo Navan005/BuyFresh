@@ -16,8 +16,11 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        //Button is assigned to the declared variable.
         createButton=(Button) findViewById(R.id.create_btn);
 
+
+        //clicking create button will send us to product activity.
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -17,9 +17,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Buttons are assigned to the declared variables.
         signupButton=(Button) findViewById(R.id.signup_btn);
         loginButton=(Button) findViewById(R.id.login_btn);
 
+        //Clickig signup button will send us to signup activity.
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +30,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+        // Clicking login button will send us to product activity.
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -26,7 +26,7 @@ public class ProductActivity extends AppCompatActivity {
 
 
 
-
+        //Imageviews are assigned to the declared variables.
         fruits = (ImageView)  findViewById(R.id.fruits_img);
         dairy = (ImageView)  findViewById(R.id.dairy_img);
         beverage = (ImageView)  findViewById(R.id.beverage_img);
@@ -55,7 +55,7 @@ public class ProductActivity extends AppCompatActivity {
             }
         });
 
-        //Dairy
+        //Beverage
         beverage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
