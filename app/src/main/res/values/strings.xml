@@ -48,7 +48,28 @@
     <string name="enter_your_phone_number">Enter your Phone Number</string>
     <string name="enter_your_password">Enter Your password</string>
     <string name="enter_your_password_again">Enter your password again</string>
+    <string name="title_activity_vlist">VlistActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="other_header">Other</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Notifications</string>
+    <string name="attachment_title">Download incoming attachments</string>
 
 
 </resources>

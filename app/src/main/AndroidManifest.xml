@@ -9,10 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CheckoutActivity"
-            android:parentActivityName=".DescriptionActivity" />
+        <activity android:name=".ContactActivity" android:parentActivityName=".MainActivity"></activity>
         <activity
-            android:name=".DescriptionActivity"
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"  android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".HealthlistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".PharmacylistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".BeerlistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".BreadlistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".FrozenlistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".SnacklistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".BeveragelistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".DairylistActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".BriefActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".ListActivity"
+            android:parentActivityName=".ProductActivity" />
+        <activity
+            android:name=".CheckoutActivity"
             android:parentActivityName=".ProductActivity" />
         <activity
             android:name=".ProductActivity"

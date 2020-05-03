@@ -7,6 +7,7 @@
     android:background="@drawable/backgroundpic"
     tools:context=".MainActivity">
 
+   
 
     <ImageView
         android:id="@+id/logo_image"

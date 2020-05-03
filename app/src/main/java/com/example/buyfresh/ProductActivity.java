@@ -41,7 +41,7 @@ public class ProductActivity extends AppCompatActivity {
         fruits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, ListActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +50,7 @@ public class ProductActivity extends AppCompatActivity {
         dairy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, DairylistActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +59,7 @@ public class ProductActivity extends AppCompatActivity {
         beverage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, BeveragelistActivity.class);
                 startActivity(intent);
             }
         });
@@ -69,7 +69,7 @@ public class ProductActivity extends AppCompatActivity {
         snack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, SnacklistActivity.class);
                 startActivity(intent);
             }
         });
@@ -78,7 +78,7 @@ public class ProductActivity extends AppCompatActivity {
         frozen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, FrozenlistActivity.class);
                 startActivity(intent);
             }
         });
@@ -87,7 +87,7 @@ public class ProductActivity extends AppCompatActivity {
         bread.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, BreadlistActivity.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +97,7 @@ public class ProductActivity extends AppCompatActivity {
         beer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, BeerlistActivity.class);
                 startActivity(intent);
             }
         });
@@ -107,7 +107,7 @@ public class ProductActivity extends AppCompatActivity {
         health.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent = new Intent(ProductActivity.this, HealthlistActivity.class);
                 startActivity(intent);
             }
         });
@@ -117,7 +117,7 @@ public class ProductActivity extends AppCompatActivity {
         pharmacy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProductActivity.this, DescriptionActivity.class);
+                Intent intent=new Intent(ProductActivity.this, PharmacylistActivity.class);
                 startActivity(intent);
             }
         });

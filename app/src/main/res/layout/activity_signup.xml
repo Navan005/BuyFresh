@@ -134,7 +134,7 @@
         android:autofillHints="" />
 
         <CheckBox
-            android:id="@+id/remeber_me_chk"
+            android:id="@+id/terms_conditions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/i_agree_to_terms_and_conditions"
