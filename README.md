@@ -7,3 +7,11 @@ Team Members:
 2. Sukhman Kaur
 3. Manjot Singh
 4. Rohit Jaswal
+
+CONTRIBUTION TO PROJECT
+NAVANDEEP: Main Activity, Category Activity, Brief Activity, Checkout
+            Activity, Setting Activity, About Activity, 9 List Activities, Presentation,
+            Documentation, Recycler View, Alert Radio Button.
+SUKHMAN :   Signup Activity, Login Activity, Documentation, Presentation.
+MANJOT:     Documentation
+ROHIT :     Documentation
