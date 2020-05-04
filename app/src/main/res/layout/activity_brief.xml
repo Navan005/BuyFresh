@@ -26,7 +26,7 @@
                 android:background="#2d2d2d"
                 android:id="@+id/pro_thumbnail"
                 android:scaleType="centerCrop"
-                android:contentDescription="product_image" />
+                android:contentDescription="@string/product_image" />
 
 
             <TextView
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="product_title"
+                android:text="@string/product_title"
                 android:textColor="#000000"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -56,7 +56,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="description"
+                android:text="@string/description"
                 />
 
             <LinearLayout
@@ -81,7 +81,7 @@
                     android:id="@+id/minus_btn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:text="-"
+                    android:text="@string/minus"
                     android:textColor="@android:color/widget_edittext_dark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -93,7 +93,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
 
-                    android:text="0"
+                    android:text="@string/_0"
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textSize="20sp"
@@ -104,12 +104,13 @@
                     android:id="@+id/add_btn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:text="+"
+                    android:text="@string/plus"
                     android:textColor="@android:color/widget_edittext_dark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -126,7 +127,8 @@
                     android:backgroundTint="#FD1201"
                     app:fabCustomSize="70dp"
                     app:maxImageSize="35dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back"
+                    tools:ignore="UnusedAttribute" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/purchase_product"
@@ -138,7 +140,8 @@
                     app:fabCustomSize="70dp"
                     android:backgroundTint="#00FF0A"
                     app:maxImageSize="40dp"
-                    android:src="@drawable/ic_shopping_basket_black_24dp" />
+                    android:src="@drawable/ic_shopping_basket_black_24dp"
+                    tools:ignore="UnusedAttribute" />
 
 
             </LinearLayout>

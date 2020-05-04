@@ -26,7 +26,7 @@
                 android:layout_height="300dp"
                 android:scaleType="centerCrop"
                 android:background="#2d2d2d"
-                android:contentDescription="product_image" />
+                android:contentDescription="@string/product_image" />
 
         </LinearLayout>
 
@@ -39,7 +39,7 @@
             android:typeface="serif"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="product_title"/>
+            android:text="@string/product_title"/>
 
         <TextView
             android:id="@+id/book_Price"

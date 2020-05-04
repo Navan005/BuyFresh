@@ -2,6 +2,7 @@ package com.example.buyfresh;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class CheckoutActivity extends AppCompatActivity {
+public class CheckoutActivity extends AppCompatActivity implements RadioFragment.SingleChoiceListener {
 
     private Button payment;
     private TextView price;
@@ -19,6 +20,9 @@ public class CheckoutActivity extends AppCompatActivity {
     private TextView qst;
     private TextView amount;
     AlertDialog.Builder builder;
+    private TextView DeliveryOption;
+    Button DeliveryButton;
+
 
 
     @Override
@@ -33,6 +37,8 @@ public class CheckoutActivity extends AppCompatActivity {
         qst=(TextView) findViewById(R.id.qst);
         amount=(TextView) findViewById(R.id.amount);
         builder = new AlertDialog.Builder(this);
+        DeliveryOption = findViewById(R.id.DeliveryOption);
+        DeliveryButton = findViewById(R.id.DeliveryButton);
 
         // We imported the cost from description activity into String "total".
         String Total=getIntent().getStringExtra("total");
@@ -44,10 +50,10 @@ public class CheckoutActivity extends AppCompatActivity {
         double totalMoney=(cost+gstTax+qstTax);
 
         // Assigning value to textViews whiile rounding it to 2 decimals.
-        price.setText("Cost: "+String.format("%.2f",cost) );
-        gst.setText("GST: "+String.format("%.2f",gstTax) );
-        qst.setText("QST: "+String.format("%.2f",qstTax) );
-        amount.setText("Total Amount: "+String.format("%.2f",totalMoney) );
+        price.setText("Cost: $"+String.format("%.2f",cost) );
+        gst.setText("GST: $"+String.format("%.2f",gstTax) );
+        qst.setText("QST: $"+String.format("%.2f",qstTax) );
+        amount.setText("Total Amount: $"+String.format("%.2f",totalMoney) );
 
 
         // This will give a pop up message after button is pressed.
@@ -79,9 +85,55 @@ public class CheckoutActivity extends AppCompatActivity {
                 alert.setTitle("Dear Customer,");
                 alert.show();
 
-
-
             }
         });
+
+
+        //for alert
+
+
+
+        DeliveryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogFragment singleChoiceDialog = new RadioFragment();
+                singleChoiceDialog.setCancelable(false);
+                singleChoiceDialog.show(getSupportFragmentManager(), "Single Choice Dialog");
+            }
+        });
+
+    }
+    double c=0;
+
+    @Override
+    public void onPositiveButtonClicked(String[] list, int position) {
+        DeliveryOption.setText(list[position]);
+
+        String ab = DeliveryOption.getText().toString();
+        String k=ab.substring(0,1);
+        String d1="N";
+        String d2="E";
+        String d3="T";
+        String d4="O";
+        if(k.equals(d1)){
+            DeliveryOption.setText("$0");
+        }
+
+        if(k.equals(d2)){
+            DeliveryOption.setText("$5");
+        }
+
+        if(k.equals(d3)){
+            DeliveryOption.setText("$7");
+        }
+
+        if(k.equals(d4)){
+            DeliveryOption.setText("$9");
+        }
+    }
+
+    @Override
+    public void onNegativeButtonClicked() {
+        DeliveryOption.setText("Normal Delivery (4-5 days) ($0)");
     }
 }

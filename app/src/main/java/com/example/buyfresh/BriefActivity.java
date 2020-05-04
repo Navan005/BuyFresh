@@ -66,7 +66,6 @@ public class BriefActivity extends AppCompatActivity {
 
                     if(number_product>0) {
                         Double Total = (number_product * price_product);
-
                         String s = Double.toString(Total);
                         Intent intent = new Intent(BriefActivity.this, CheckoutActivity.class);
                         intent.putExtra("total", s);
@@ -115,4 +114,5 @@ public class BriefActivity extends AppCompatActivity {
         });
 
     }
+
 }

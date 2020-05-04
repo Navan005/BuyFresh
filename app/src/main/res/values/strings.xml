@@ -70,6 +70,19 @@
     <!-- Sync Preferences -->
     <string name="sync_title">Notifications</string>
     <string name="attachment_title">Download incoming attachments</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="description">description</string>
+    <string name="product_title">product_title</string>
+    <string name="product_image">product_image</string>
+    <string name="username">Username</string>
 
+    <string-array name="choice_items">
+        <item>Normal Delivery (4-5 days) ($0)</item>
+        <item>Express Delivery (2-3 days) ($5)</item>
+        <item>Two Day Delivery (1-2 days) ($7)</item>
+        <item>One day delivery( 5-6 hours) ($9)</item>
+
+    </string-array>
 
 </resources>

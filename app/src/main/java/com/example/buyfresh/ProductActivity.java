@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ProductActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class ProductActivity extends AppCompatActivity {
     ImageView beer;
     ImageView health;
     ImageView pharmacy;
+    TextView slogan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,11 @@ public class ProductActivity extends AppCompatActivity {
         beer = (ImageView)  findViewById(R.id.beer_img);
         health = (ImageView)  findViewById(R.id.health_img);
         pharmacy = (ImageView)  findViewById(R.id.pharmacy_img);
+        slogan = (TextView)  findViewById(R.id.slogan);
+
+
+        String uname=getIntent().getStringExtra("uname");
+        slogan.setText("Welcome "+String.format(uname.toUpperCase()) +", Select your category." );
 
         // Fruits
         fruits.setOnClickListener(new View.OnClickListener() {

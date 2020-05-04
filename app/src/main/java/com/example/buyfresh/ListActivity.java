@@ -25,7 +25,7 @@ public class ListActivity extends AppCompatActivity {
         lstProduct.add(new Product("White mushrooms","Origin : Canada, United States", "$2.49",R.drawable.mushroom));
         lstProduct.add(new Product("Seedless mini cucumbers","Origin : Belgium, Canada, Spain, United States, Honduras, Morocco, Mexico, Netherlands, Dominican Republic", "$2.99",R.drawable.cucumber));
 
-        //Assigning a new reclerview variable and setting layout using grid layout with 1 product per line.
+        //Assigning a new recyclerview variable and setting layout using grid layout with 1 product per line.
         RecyclerView recyclev = (RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this,lstProduct);
         recyclev.setLayoutManager(new GridLayoutManager(this,1));
